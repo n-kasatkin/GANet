@@ -1,0 +1,3 @@
+# ninja log v5
+2	22181	1602418712874586932	/home/kasatkin/Projects/GANet/libs/GANet/build/temp.linux-x86_64-3.6/src/GANet_cuda.o	ca97af2eecfd7231
+2	98277	1602418788971100544	/home/kasatkin/Projects/GANet/libs/GANet/build/temp.linux-x86_64-3.6/src/GANet_kernel.o	60ae3178764fa07f

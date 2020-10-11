@@ -1,0 +1,5 @@
+# ninja log v5
+1	7854	1602418799939174523	/home/kasatkin/Projects/GANet/libs/sync_bn/build/temp.linux-x86_64-3.6/src/cpu/sync_bn.o	29f6332ccbe8e0b4
+1	18920	1602418811003249137	/home/kasatkin/Projects/GANet/libs/sync_bn/build/temp.linux-x86_64-3.6/src/cpu/operator.o	f70a8490bd924e73
+1	17641	1602418829163371581	/home/kasatkin/Projects/GANet/libs/sync_bn/build/temp.linux-x86_64-3.6/src/gpu/operator.o	93136f48830f81d2
+1	21383	1602418832907396821	/home/kasatkin/Projects/GANet/libs/sync_bn/build/temp.linux-x86_64-3.6/src/gpu/sync_bn_cuda.o	baeec4c376a139b2
