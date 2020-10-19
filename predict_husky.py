@@ -77,19 +77,22 @@ if opt.resume:
 def test_transform(temp_data, crop_height, crop_width):
     _, h, w = np.shape(temp_data)
 
-    cx, cy = w // 2, h // 2
-    hwcrop, hhcrop = crop_width // 2, crop_height // 2
-    temp_data = temp_data[:, cy - hhcrop:cy + hhcrop, cx - hwcrop:cx + hwcrop]
+    # cx, cy = w // 2, h // 2
+    # hwcrop, hhcrop = crop_width // 2, crop_height // 2
+    # temp_data = temp_data[:, cy - hhcrop:cy + hhcrop, cx - hwcrop:cx + hwcrop]
 
-    left = np.ones([1, 3, crop_height, crop_width], 'float32')
+    left = np.ones([1, 3, h, w], 'float32')
     left[0, :, :, :] = temp_data[0: 3, :, :]
-    right = np.ones([1, 3, crop_height, crop_width], 'float32')
+    right = np.ones([1, 3, h, w], 'float32')
     right[0, :, :, :] = temp_data[3: 6, :, :]
     return torch.from_numpy(left).float(), torch.from_numpy(right).float(), h, w
 
 def load_data(leftname, rightname):
     left = Image.open(leftname)
     right = Image.open(rightname)
+    left = left.resize((opt.crop_width, opt.crop_height))
+    right = right.resize((opt.crop_width, opt.crop_height))
+
     size = np.shape(left)
     height = size[0]
     width = size[1]
