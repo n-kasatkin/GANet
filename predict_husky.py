@@ -28,7 +28,7 @@ parser.add_argument('--crop_height', type=int, required=True, help="crop height"
 parser.add_argument('--crop_width', type=int, required=True, help="crop width")
 parser.add_argument('--max_disp', type=int, default=192, help="max disp")
 parser.add_argument('--resume', type=str, default='', help="resume from saved model")
-parser.add_argument('--cuda', type=bool, default=True, help='use cuda?')
+parser.add_argument('--cuda', action='store_true', help='use cuda?')
 parser.add_argument('--kitti', type=int, default=0, help='kitti dataset? Default=False')
 parser.add_argument('--kitti2015', type=int, default=0, help='kitti 2015? Default=False')
 parser.add_argument('--left_path', type=str, required=True, help="data root")

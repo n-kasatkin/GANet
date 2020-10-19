@@ -1,2 +1,2 @@
 # !/bin/bash
-python predict_husky.py --crop_height=384 --crop_width=1200 --max_disp=192 --left_path='/home/kasatkin/Datasets/SDBCS_Husky_Ouster_64/left_image_raw/images/' --right_path '/home/kasatkin/Datasets/SDBCS_Husky_Ouster_64/right_image_raw/images/' --save_path='./result/SDBCS_Husky_Ouster_64' --resume='./pretrained_models/kitti2012_final.pth' --cuda True
+python predict_husky.py --crop_height=576 --crop_width=1200 --max_disp=192 --left_path='/home/kasatkin/Datasets/SDBCS_Husky_Ouster_64/left_image_raw/images/' --right_path '/home/kasatkin/Datasets/SDBCS_Husky_Ouster_64/right_image_raw/images/' --save_path='./result/SDBCS_Husky_Ouster_64' --resume='./pretrained_models/kitti2012_final.pth' --cuda
